@@ -1,0 +1,162 @@
+@import'_variable';
+@import '_mixin';
+@import '_navbar';
+.header{
+    height: 37px;
+}
+
+#ShoppingCart{
+    background-color: $color-bg;
+    width:100%;
+    margin-left: auto;
+    padding-bottom: 5em;
+    .title{
+        font-size: 2em;
+        font-weight: 900;
+        }
+        @include cellphone{
+            .title{
+                font-size: 3em;
+            }
+    }
+    .Main-Content{
+        .Shopping-ElseFunction{
+            .Continue-Shopping{
+                font-size: 1em;
+                background-color:rgb(43,71,94);
+                color: rgb(195, 226, 245);
+                box-shadow: $btn-box-shadow;
+                padding: 0.5em;
+                border-radius: 5px;
+                margin-right: 1.5em;
+            }
+            .DelAllItem{
+                background-color:$btn-bcg-color;
+                color: $btn-color;
+                box-shadow: $btn-box-shadow;
+                border-radius: 5px;
+            }
+        }
+    }
+    @include cellphone{
+        .Shopping-Recommend{
+            position: fixed;
+            right: 0;
+            top: 5.5em;
+        }
+    }
+}
+@include cellphone{
+    #ShoppingCart{
+        width: calc(100% - 60px);
+        margin-left: auto;
+    }   
+}
+.Shpping-else-text{
+    font-size: 0.2em;
+    .Shpping-else-text div{
+        border: 1px solid #686868aa;
+        border-radius: 5px;
+        padding: 2em;
+    }
+    div{
+        img{
+            width: 15em;
+            height: 15em;
+            border: 0px;
+        }
+    }
+    
+}
+
+.Shopping-Select-Sum-Pric{
+    .Shopping-Checkout{
+        font-size: 1.2em;
+        font-weight: 700;
+        .Shpopping-Price{
+            font-weight: 900;
+            color: $price-color;
+            text-shadow: $price-text-shadow;
+        }
+    }
+    @include cellphone{
+        .Shopping-Checkout{
+            font-size: 1.7em;
+        }
+    }
+}
+
+
+@include cellphone{
+    //mainopen classList
+    .open-section{
+        width: calc(100% - 220px) !important;
+        transition: 0.5s;
+    }
+}
+
+
+//Template Spopping_Select_Template
+.Game-Shopping-Item{
+    padding:1em 0em 1em 0em;
+    border-bottom: 1px solid #000;
+    .Game-Price{
+        position: relative;
+        height: 9em;
+        .Select-Game-Title{
+            font-size: 1.8em;
+        }
+        @include mobile{
+            .Select-Game-Title{
+                font-size: 1.5em;
+            }
+        }
+        div{
+            p{
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            .Select-Item-Price{
+                font-weight: 900;
+                color: rgb(254, 46, 46);
+                text-shadow: 3px 2px 1px #0000003d;
+            }
+        }
+        .Remove_btn{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 5px;
+            background-color:$btn-bcg-color;
+            color: $btn-color;
+            box-shadow: $btn-box-shadow;
+        }
+    }
+    @include pad{
+        .Game-Price{
+            height: auto;
+        }
+    }
+}
+@include cellphone{
+    
+}
+//Template #Shopping_Recommend
+.Recommend-Price-Box{
+    padding-top: 1em;
+    span{
+        font-weight: 600;
+    }
+    .Recommend-Price{
+        font-weight: 800;
+    }
+}
+//共用
+img{
+    border-radius: 0.4em;
+    border: 1px solid black;
+}
+
+.MainScreen{
+    width: 100% !important;
+}

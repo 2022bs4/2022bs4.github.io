@@ -1,0 +1,196 @@
+@import '_mixin.scss';
+@import '_variable.scss';
+@import '_navbar';
+
+#CommodityDetials{
+    background-color: $color-bg;
+    width: 100%;
+    margin-left: auto;
+    transition: .5s;
+    padding: 1em 2em 5em 2em;
+    .MainGame-Datial{
+        h2{
+            font-size: 1em;
+            padding: 0.1em;
+            box-shadow: 5px 5px 1px #000,
+                        5px 5px 1px #000;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        @include mobile{
+            h2{
+                font-size: 2em;
+            }
+        }
+        .Game-Introduce{
+            p{
+                margin-top:0.5em ;
+                font-size: 0.8em;
+            }
+            h3{ 
+                font-size: 0.5em;
+                font-weight: 800;
+            }
+        }
+        @include cellphone{
+            .Game-Introduce{
+                width: 40%;
+            }
+            .Game-Video-Introduce{
+                width: 55%;
+            }
+        }
+    }
+    .Game-Function-Btn{
+        width: 100%;
+        .Game-Price{
+            font-size: 2em;
+            font-weight: 700;
+            padding: 0 0.5em;
+            color: $price-color;
+            text-shadow: $price-text-shadow;
+        }
+        @include mobile{
+            .Game-Price{
+                font-size: 3em;
+            } 
+        }
+    }
+    .Game-Datails-Area{
+        .Game-Datails{
+            p{
+                font-weight: 700;
+            }
+        }
+        .Recommend{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include cellphone{
+            .Recommend{
+                position: relative;
+                div{
+                    position: sticky;
+                    top: 10em;
+                }
+            }
+        }
+    }
+    
+    .System-Requirement{
+        nav button{
+            width: 30%;
+        }
+        .Cnfigure-Box{
+            margin-top: 0.5em;
+            border: 1px solid #000;
+            border-radius: 5px;
+            .Min-Cnfigure{
+                border-bottom: 1px solid #000;
+                padding: 0.5em 0em 0 0;
+            }
+            .Suggest-Configure{
+                padding-top: 0.5em;
+            }
+        }
+        @include cellphone{
+            .Cnfigure-Box{
+                margin-top: 0.5em;
+                border: 1px solid #000;
+                border-radius: 5px;
+                .Min-Cnfigure{
+                    border-right: 1px solid #000;
+                }
+                .Suggest-Configure{
+                    padding-top: 0.5em;
+                }
+            }
+        }
+        .System-text{
+            padding-top:1em ;
+            font-size: 0.5em;
+        }
+
+    }
+    .Video-Area{
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        z-index: 3;
+        video{
+            width:300px;
+            height:250px;
+        }
+        .Video-Clear{
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            z-index: 1;
+            color: rgb(148, 41, 22);
+        }
+    }
+}
+.Price-btn{
+    margin-top: 1em;
+    display: flex;
+    button{
+        aspect-ratio: 1/0.5;
+        border-radius:5px ;
+        font-weight: 700;
+        margin-left: 1em;
+        &:nth-child(1),&:nth-child(2){
+        background-color:$btn-bcg-color;
+        color: $btn-color;
+        box-shadow: $btn-box-shadow;
+        }
+        &:nth-child(3){
+            box-shadow: $buy-box-shadow;
+            a{
+                color: #eee;
+            }
+        }
+    }
+}
+@include cellphone{
+    #CommodityDetials{
+        width: calc(100% - 60px);
+        margin-left: auto;
+    }   
+}
+
+@include cellphone{
+    .MainGame-Datial{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        }
+    //JSclassList
+    .open-section{
+        width: calc(100% - 220px) !important;
+        transition: 0.5s;
+    }
+}
+
+//JSclassList
+.Template-box{
+    font-size: 0.5em;
+} 
+
+
+
+//共用
+img{
+    border-radius: 0.4em;
+    border: 1px solid black;
+}
+ul{
+    list-style: none;
+}
+.MainScreen{
+    width: 100% !important;
+}
+
+
+
+

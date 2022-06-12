@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--  -->
+    <script src="https://kit.fontawesome.com/bb2cebfb58.js" crossorigin="anonymous"></script>
+    <title>遊戲平台-商品詳細頁面</title>
+    <link rel="stylesheet" href="/css/ProductDetal.css">
+    <!-- <link rel="stylesheet" href="/scss/ProductDetal.css"> -->
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-box">
+            <nav class="header-box-nav">
+                <div class="header-box-nav-content">
+                    <button class="btn header-box-nav-content-collapse">
+                        <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
+                    </button>
+                    <ul class="list-group header-box-nav-content-tours">
+                        <li class="list-tour-home" style="--clr:#f44336">
+                            <a href="#home">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span>首頁</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-shop" style="--clr:#ffa500">
+                            <a href="#shop">
+                                <span class="icon">
+                                    <ion-icon name="storefront-outline"></ion-icon>
+                                </span>
+                                <span>商店</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-game" style="--clr:#FFD700">
+                            <a href="#game">
+                                <span class="icon">
+                                    <ion-icon name="game-controller-outline"></ion-icon>
+                                </span>
+                                <span>遊戲庫</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-forum active" style="--clr:#0fc70f">
+                            <a href="#forum">
+                                <span class="icon">
+                                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                                </span>
+                                <span>論壇</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-friend " style="--clr:#2196f3">
+                            <a href="#friend">
+                                <span class="icon">
+                                    <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <span>好友</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-about" style="--clr:#b145e9">
+                            <a href="#about">
+                                <span class="icon">
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </span>
+                                <span>關於我們</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-box-tool">
+                <div class="nav-toggler"></div>
+                <ion-icon class="sidebar-toggler" name="arrow-forward-outline"></ion-icon>
+                <a href="#LOGO" class="navbar-brand logo h1">SOLO GAME</a>
+                <form class="form-inline search-form">
+                    <input class="form-control " type="search" placeholder="搜尋">
+                    <button class="btn search-form-btn" type="button"></button>
+                </form>
+                <div class="navbar-brand header-box-tool-end">
+                    <div class="dropdown">
+                        <button class="bell" type="button" id="bell-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="bell-list">
+                            <div href="#" class="dropdown-item">訊息1</div>
+                            <div href="#" class="dropdown-item">訊息2</div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="login" type="button" id="user-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="user-list">
+                            <a href="#" class="dropdown-item">註冊登入</a>
+                            <a href="#" class="dropdown-item">個人資料</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="CommodityDetials" class="close-section">
+        <!-- 搜尋及導覽列 -->
+        
+        <!-- 遊戲主要介紹 -->
+        <section class="MainGame-Datial col-12 p-0 d-md-flex flex-md-wrap justify-content-md-between">
+            <h2 class="Table-title w-100"></h2>
+            <!-- 遊戲名稱、開發商、開發人員、發行日期、簡介 動態載入 -->
+            <div class="Game-Introduce d-md-flex flex-md-column justify-content-md-between mt-md-2">
+                <div>   
+                    <img  alt="" class="w-100">
+                    <p class="col-12  p-0 text-left"></p>
+                </div>
+                <div>
+                    <h3 class="Developers">開發商 <a href="#"></a></h3>
+                    <h3 class="Developers_Person ">開發人員 <a href="#"></a></h3>
+                    <h3 class="Selling-Date ">發行日期 <a href="#"></a></h3>
+                </div>
+                <!-- 動態標籤 -->
+                <!-- <div class="Game-tag"></div> -->
+                <!-- 動態評論 -->
+                <!-- <div class="Game-Comment"></div> -->
+            </div>
+            
+            <!--影片 動態測入，目前Lol測試版  -->
+            <div class="Game-Video-Introduce mt-md-2 ">
+                <!-- 以下測試 -->
+                <div  class="swiper mySwiper1 ">
+                    <div class="swiper-wrapper" id="mainphoto"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper2">
+                    <div class="swiper-wrapper" id="thumbs">
+                    </div>
+                </div>
+                <!-- 以上測試 -->
+            </div>
+
+        </section>
+
+        <section class="col-12 p-0 mt-md-3">
+            <!-- 購買收藏等功能鍵、靜態 -->
+            <div class="Game-Function-Btn col-12 p-0 d-lg-flex justify-content-md-between">
+                <div class="Game-Price d-flex align-items-center col-12 col-lg-6"></div>
+                <div class="Price-btn col-12 col-lg-6 flex-row-reverse">
+                    <button>收藏</button>
+                    <button>分享</button>
+                    <button class="btn btn-success">
+                        <a href="/ShoppingCart.html" >購買</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-12 d-md-flex flex-md-wrap justify-content-md-between p-0 Game-Datails-Area">
+            <!-- 遊戲文字介紹 要動態載入 -->
+            <p class="col-12 p-0 mt-4 ">關於此遊戲</p>
+            <div class="Game-Datails col-12 col-md-8 p-0">
+            </div>
+            <div class="Recommend col-12 col-md-3 p-0 "></div>
+        </section>
+        <section class="col-md-12">
+            <!-- 性統需求 -->
+            <div class="System-Requirement col-12 d-flex flex-wrap p-0">
+                <!-- Nav -->
+                <nav class=" col-12 d-flex justify-content-around">
+                    <button class="btn">Windows</button>
+                    <button class="btn">macOS</button>
+                    <!-- <button class="">SteamOS<br>Linux</button> -->
+                </nav>
+                <div class="col-12 d-md-flex Cnfigure-Box">
+
+                    <!-- 最低配置 -->
+                    <div class="Min-Cnfigure  col-12 col-md-6 ">
+                    </div>
+
+                    <!-- 建議配置 -->
+                    <div class="Suggest-Configure  col-12  col-md-6 ">
+                        <!-- <span>建議配備:</span> -->
+                    </div>
+                </div>
+                
+                <span class="System-text">©2020-2022 and published by Paradox Interactive AB, CRUSADER KINGS and PARADOX INTERACTIVE are trademarks and/or registered trademarks of Paradox Interactive AB in Europe, the U.S., and other countries. All other trademarks, logos, and copyrights are the property of their respective owners.</span>
+            </div>
+        <!--遊戲組合包  -->
+        <div></div>
+        <!-- 相似產品 -->
+        <div></div>
+        <!-- 遊戲資訊EX:語言.... -->
+        <div></div>
+        </section>
+            
+        <section class="Video-Area">
+            <video src="/video/FUU.mp4" poster="/img/MTH002.jpeg" controls="true"></video>
+            <i class="fa-solid fa-xmark Video-Clear"></i>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="content-item"><a href="#"><img class="item-img" src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png"></a></div>
+            <div class="content-item">
+                <p class="item-p">© 2022 Valve Corporation. 版權所有。所有商標皆為各自所有權人在美國與其他國家 (地區) 之財產。
+                所有價格均包含增值稅（如適用）。<br>
+                <a class="item-a" href="#">隱私權政策</a>
+                <a class="item-a" href="#">法律聲明</a>
+                <a class="item-a" href="#">訂戶協議</a>
+                <a class="item-a" href="#">退款</a>
+                <a class="item-a" href="#">Cookie</a>
+            </p>
+        </div>
+            <div class="content-item">
+                <img class="item-img footer-logo" src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png">
+            </div>
+        </div>
+    </footer>
+
+    <!--  -->
+    <template id="GamePictureText">
+        <div class="pic">
+            <img src="" alt="" class="w-100">
+        </div>
+        <div class="text">
+            <h4></h4>
+            <p></p>
+        </div>
+    </template>
+
+    <!--詳細圖文產生  -->
+    <template id="GameSystem">
+        <div class="System-box">
+            <span class="mb-3 text-danger"></span>
+            <p class="bit"></p>
+            <ul class="p-0 ">
+                <li class="mb-3"><span class="mb-0 text-success">作業系統 : </span><span class="Stytem mb-0 "></span></li>
+                <li class="mb-3"><span class="mb-0 text-success">處理器 : </span><span class="Processor mb-0"></span></li>
+                <li class="mb-3"><span class="mb-0" text-success>記憶體 : </span><span class="Memory mb-0"></span></li>
+                <li class="mb-3"><span class="mb-0 text-success">顯示卡 : </span><span class="GraphicsCard mb-0"></span></li>
+                <li class="mb-3"><span class="mb-0 text-success">儲存空間 : </span><span class="Storage mb-0"></span></li>
+            </ul>
+        </div>
+    </template>
+    
+    <!--  -->
+    <template id="Shopping_Recommend" class="d-flex flex-wrap">
+        <div class="col-6 col-md-12  p-0 ">
+            <div class=" col-11 p-0 d-flex flex-wrap Recommend-item">
+                <a href="#" class="col-12 p-0">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/597180/capsule_184x69_tchinese.jpg?t=1654230486" alt="" class="w-100">
+                </a>
+                <span>NT$:</span>
+                <p class="Recommend-Price">9527</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <!-- swiper  JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+        <!-- <script src="/js/forum.js"></script> -->
+    <script src="/js/ProductDetails.js"></script>
+</body>
+</html>
+
+
+
+

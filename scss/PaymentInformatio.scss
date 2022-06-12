@@ -1,0 +1,135 @@
+@import'_variable';
+@import '_mixin';
+@import '_navbar';
+
+
+#Payment-Information{
+    background-color: $color-bg;
+    width: 100%;
+    transition: .5s;
+    padding: 1em 1em 5em 1em;
+}
+@include mobile{
+    #Payment-Information{
+        width: calc(100% - 60px);
+        margin-left: auto;
+    }   
+}
+//信用卡主要資料
+
+.Visa-Information-Date{
+    .Visa-Input-Box{
+        input{
+            width: 40%;
+            margin:0 1em 1em 1em;
+        }
+        & :nth-child(1),& :nth-child(5){
+            margin-left: 0;
+        }
+        & :nth-child(4){
+            display: none;
+        }
+        @include mobile{
+            input{
+                width: 5em;
+                margin:0 1em 1em 1em;
+            }
+            & :nth-child(4){
+                display:block;
+            }
+            & :nth-child(5){
+                margin-left: 0.5em;
+            }
+        }
+        @include cellphone{
+            input{
+                width: 4.1em;
+                margin:0 0.5em 0 0.4em;
+            }
+        }
+        @include pad{
+            input{
+                width: 4.5em;
+                margin:0 0.5em 0 0.5em;
+            }
+        }
+        @include computer{
+            input{
+                width: 6em;
+                margin:0 0.5em 0 0.5em;
+            }
+        }
+    }
+}
+
+.Visa-InputData{
+        div{
+            .Month-Input{
+                width: 5em;
+                margin:0 0.5em 0 0em ;
+            }
+        }
+        div{
+            .Year-Input{
+                width: 5em;
+            }
+        }
+        div{
+            #Visa_Safety{
+                width: 5em;
+            }
+        }
+    }
+
+@include mobile {
+    #Payment-Information{
+        padding: 1em 2em 5em 2em;
+    }
+}    
+
+//
+@include cellphone{ 
+    //JSclassList
+    #Payment-Information{
+        padding: 1em 1em 5em 1em;
+    }
+    .open-section{
+        width: calc(100% - 220px) !important;
+        transition: 0.5s;
+    }
+}
+.Erro{
+    background-color: rgba(240, 169, 169, 0.856);
+}
+
+//
+@include pad{
+    #Payment-Information{
+        padding: 1em 4.7em 5em 4.7em;
+    }
+}
+//
+.Country-Input,.Month-Input.Year-Input{
+    position: relative;
+}
+#Visa-Countey,#Visa_Month,#Visa_Year{
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+.Check-Buy-Btn{
+    box-shadow: $buy-box-shadow;
+}
+//
+.MainScreen{
+    width: 100% !important;
+}
+
+span{
+    text-shadow: 1px 1px 1px #eee;
+    font-weight:700 ;
+}
+.Number-title{
+    font-weight: 800;
+    font-size: 2em;
+}

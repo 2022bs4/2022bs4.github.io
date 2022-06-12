@@ -1,0 +1,69 @@
+@import '_mixin.scss';
+@import '_variable.scss';
+footer{
+    // width: calc(100% - 60px);
+    padding: 0 1em;
+    margin-left: auto;
+    background-color: $color-main;
+    transition: .5s;
+    .footer-content{
+        padding-top: 2em; 
+        padding-bottom: 30px;
+        .content-item{
+            display: flex;
+            justify-content: center;
+            line-height: 1.5em;
+            &:first-child{
+                text-align: end;
+                padding-right: 1em;
+            }
+            &:last-child{
+                padding-left: 1em;
+            }
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}
+@include mobile{
+    .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .content-item{
+            width: 33.333333%;
+        }
+    }
+}
+.item-p{
+    color: #BEBEBE;
+    font-size: 0.5em;
+}
+.login-btn-ctrl{
+    a{
+        display: block;
+        color: $color-text;
+        margin-top: 2em;
+    }
+}
+a[class^="item-a"]{
+    color: $color-text;
+    &::after{
+        content: '|';
+        color: $color-text;
+        padding-left: 7px;
+    }
+    &:last-child::after{
+        content: ' ';
+    }
+}
+.container-fluid{
+    padding-left: 0;
+}
+.item-img{
+    width: 6em;
+}
+.footer-logo{
+    max-height: 30px;
+}
