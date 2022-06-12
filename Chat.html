@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initiaborder-leftl-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login/Chat.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>論壇區塊</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-box">
+            <nav class="header-box-nav">
+                <div class="header-box-nav-content">
+                    <button class="btn header-box-nav-content-collapse">
+                        <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
+                    </button>
+                    <ul class="list-group header-box-nav-content-tours">
+                        <li class="list-tour-home" style="--clr:#f44336">
+                            <a href="#home">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span>首頁</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-shop" style="--clr:#ffa500">
+                            <a href="#shop">
+                                <span class="icon">
+                                    <ion-icon name="storefront-outline"></ion-icon>
+                                </span>
+                                <span>商店</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-game" style="--clr:#FFD700">
+                            <a href="#game">
+                                <span class="icon">
+                                    <ion-icon name="game-controller-outline"></ion-icon>
+                                </span>
+                                <span>遊戲庫</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-forum active" style="--clr:#0fc70f">
+                            <a href="#forum">
+                                <span class="icon">
+                                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                                </span>
+                                <span>論壇</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-friend " style="--clr:#2196f3">
+                            <a href="#friend">
+                                <span class="icon">
+                                    <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <span>好友</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-about" style="--clr:#b145e9">
+                            <a href="#about">
+                                <span class="icon">
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </span>
+                                <span>關於我們</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-box-tool">
+                <div class="nav-toggler"></div>
+                <ion-icon class="sidebar-toggler" name="arrow-forward-outline"></ion-icon>
+                <a href="#LOGO" class="navbar-brand logo h1">SOLO GAME</a>
+                <form class="form-inline search-form">
+                    <input class="form-control " type="search" placeholder="搜尋">
+                    <button class="btn search-form-btn" type="button"></button>
+                </form>
+                <div class="navbar-brand header-box-tool-end">
+                    <div class="dropdown">
+                        <button class="bell" type="button" id="bell-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="bell-list">
+                            <div href="#" class="dropdown-item">訊息1</div>
+                            <div href="#" class="dropdown-item">訊息2</div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="login" type="button" id="user-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="user-list">
+                            <a href="#" class="dropdown-item">註冊登入</a>
+                            <a href="#" class="dropdown-item">個人資料</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="forum" class="container-fluid px-0">
+    <div class="chat-content position-relative">
+        <div class="chat-left">
+            <div class="user-content position-relative">
+                <img class="pl-2 py-3  user-select-none" src="https://picsum.photos/50/50/?random=10">
+                <p class="pl-2 py-3  user-select-none">好好喔都可以打APEX</p>
+                <span class="user-span pl-2 py-3  user-select-none">∨</span>
+                <ul class="state-ul position-absolute p-0 m-0">
+                    <li class="state-li  user-select-none">線上</li>
+                    <li class="state-li  user-select-none">離開</li>
+                    <li class="state-li  user-select-none">隱藏</li>
+                </ul>
+                <p class="position-absolute line  user-select-none">線上</p>
+                <div class="user-search position-relative">
+                    <p class="pl-2  user-select-none">好友</p>
+                        <input class="search  position-absolute" type="search" value="" >
+                </div>
+            <div class="resizeR"></div>
+            <div class="friends w-100 d-flex flex-wrap">
+                <span class="friends-span w-100 pl-2 pt-4  user-select-none">好友名單(<span class="count">0</span>)</span>
+                <div class="friend-ul w-100">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chat-right">
+    </div>
+    </div>
+
+</main>
+<!-- 自定義滑鼠右鍵的菜單 -->
+<div id="rightmenu">
+            <span class="add-type">建立分類</span>
+</div>
+<!-- 群組分類的modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content position-relative">
+        <span class="new-type">新增分類</span>
+        <span class="close position-absolute">&times;</span>
+        <div class="modal-title">
+            <span class="text d-block pb-2 pt-2">分類名稱</span>
+            <input id="groupname" type="text" value="">
+            <span class="text d-block pb-2 pt-4">選擇要加入的好友</span>
+            <div class="add d-flex mb-3"></div>
+            <div class="choose-friend mb-3">
+                
+            </div>
+        </div>
+        <div class="modal-btn-ctrl d-flex justify-content-center">
+            <button class="check d-block col-5">確認</button>
+            <button class="cancel d-block col-5">取消</button>
+        </div>
+    </div>
+</div>
+<template id="friendcard">
+    <div class="friend-li pl-2 py-3 w-100">
+        <img class="friend-img user-select-none"  src="https://picsum.photos/50/50/?random=150">
+        <div class="friend-content w-100">
+            <span class="friend-name pl-4 mb-0 user-select-none">台中玩</span>
+            <p class="friend-line pl-4 mb-0  user-select-none user-select-none">離線</p>
+        </div>
+    </div>
+</template>
+<template id="friendcard2">
+    <div class="friend-li2 pl-2 py-3 w-100">
+        <img class="friend-img2 user-select-none"  src="https://picsum.photos/50/50/?random=150">
+        <div class="friend-content2 w-100">
+            <span class="friend-name2 pl-4 mb-0 user-select-none">台中玩</span>
+            <p class="friend-line2 pl-4 mb-0  user-select-none user-select-none">離線</p>
+        </div>
+    </div>
+</template>
+
+<template id="message">
+    <div class="message-window d-flex flex-wrap">
+        <div class="message-title position-relative d-flex pl-3 ms-2">
+            <img class="py-3 message-img user-select-none" src="https://picsum.photos/30/30/?random=10">
+            <p class="pl-3 py-3 mb-0 text-light user-select-none">名稱</p>
+            <span class="close py-3 position-absolute text-light user-select-none">X</span>
+        </div>
+        <div class="wire w-100"></div>
+        <div class="message-content w-100">
+            <div class="show"></div>
+            <div class="send d-flex">
+                <input id="text" class="send-input ms-3 mb-0" type="text" name="" value="">
+                <span class="input-group-text" id="basic-addon1"> ↲</span>
+                <label for="upload" class="upload-btn text-center ms-0 my-0">上傳</label>
+                <input type="file"  accept="image/*" value="" id="upload" hidden="hidden ">
+            </div>
+        </div>
+    </div>
+</template>
+<!-- 標籤 -->
+<template id="friendtag">
+    <div class="tag my-1">
+        <p>哈</p>
+    </div>
+</template>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/forum.js"></script>
+    <script src="js/login/chat.js"></script>
+<script>
+//模擬好友名單
+let AllFriends = [
+        {
+        'img':"https://memeprod.ap-south-1.linodeobjects.com/user-gif/fc83a3a705767ab42688e4e858777196.gif",
+        'name':"張添宇",
+        'line':"上線",
+        },
+        {
+        'img':"https://memeprod.ap-south-1.linodeobjects.com/user-gif-post/1654151736656.gif",
+        'name':"大帥哥",
+        'line':"上線",
+        },
+        {
+        'img':"https://memeprod.ap-south-1.linodeobjects.com/user-gif-thumbnail/d4dd77bf2820f1c7c7b43121d4f7477b.gif",
+        'name':"AKA",
+        'line':"上線",
+        },
+        {
+        'img':"https://memeprod.ap-south-1.linodeobjects.com/user-gif/f3712e057175f57539872d740878b3df.gif",
+        'name':"新竹",
+        'line':"上線",
+        },
+        {
+        'img':"https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png",
+        'name':"金城武",
+        'line':"上線",
+        },
+        {
+        'img':"https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png",
+        'name':"不服來辯",
+        'line':"上線",
+        },
+        {
+        'img':"https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png",
+        'name':"帥哥",
+        'line':"上線",
+        },
+        {
+        'img':"https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png",
+        'name':"帥哥",
+        'line':"上線",
+        },
+        
+    ]
+
+</script>
+</body>
+
+</html>
