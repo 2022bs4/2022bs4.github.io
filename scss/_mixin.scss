@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin min-mobile {
+    @media(max-width:576px) {
+        @content;
+    }
+}
 @mixin mobile {
     @media(min-width:576px) {
         @content;
