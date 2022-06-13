@@ -399,12 +399,14 @@
 }
 
 #Check-Buy {
-  background-color: #edf1f2;
+  background: -webkit-gradient(linear, left top, right top, from(#0c273c), to(#475e6e));
+  background: linear-gradient(to right, #0c273c, #475e6e);
   width: 100%;
   margin-left: auto;
   -webkit-transition: .5s;
   transition: .5s;
   padding: 1em 1em 5em 1em;
+  color: #fff;
 }
 
 #Check-Buy .Review {
@@ -439,22 +441,24 @@
 }
 
 #Check-Buy .Review .Btn_Buy {
-  background-color: #57c470;
-  border-color: #57c470;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background-color: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
   font-weight: 700;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 10px;
+  border: 0px;
   position: absolute;
   right: 0;
-  bottom: -1em;
+  bottom: 1em;
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
+  color: #fff;
 }
 
 #Check-Buy .Review .Btn_Buy:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-  color: #fffdfd;
+  background-color: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #Check-Buy .Review a {
@@ -485,6 +489,13 @@
   }
 }
 
+@media (min-width: 576px) {
+  #Check-Buy {
+    width: calc(100% - 60px);
+    margin-left: auto;
+  }
+}
+
 @media (min-width: 768px) {
   #Check-Buy {
     display: -webkit-box;
@@ -493,12 +504,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: calc(100% - 60px);
-    margin-left: auto;
   }
-}
-
-@media (min-width: 768px) {
   .open-section {
     width: calc(100% - 220px) !important;
     -webkit-transition: 0.5s;
@@ -511,12 +517,13 @@
 }
 
 .Sum-Price {
-  color: #111111b8;
+  color: #fff;
   text-shadow: 3px 2px 1px #0000003d, -1px -1px 1px #c4d2e0;
 }
 
 .Game-Item {
-  border-bottom: 1px solid #3a3939;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1em;
 }
 
 .Game-Item h2 {
@@ -540,7 +547,7 @@
   font-weight: 800;
   font-size: 0.8em;
   text-shadow: 3px 2px 1px #0000003d, -1px -1px 1px #c4d2e0;
-  color: #fe2e2e;
+  color: #fff;
 }
 
 @media (min-width: 768px) {

@@ -3,11 +3,12 @@
 @import '_navbar';
 
 #Check-Buy{
-    background-color: $color-bg;
+    background:$Main-bcg;
     width:100%;
     margin-left: auto;
     transition: .5s;
     padding: 1em 1em 5em 1em;
+    color: #fff;
     .Review{
         position: relative;
         .Totoal-Price{
@@ -29,20 +30,21 @@
             }
         }
         .Btn_Buy{
-            background-color: $btn-buy-bcg;
-            border-color: $btn-buy-bcg;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            background-color: $btn-bcg-color;
             font-weight: 700;   
-            border-radius: 5px;
-            text-decoration: none;
+            border-radius: 10px;
+            border: 0px;
             position: absolute;
             right: 0;
-            bottom: -1em;
+            bottom: 1em;
             box-shadow: $btn-box-shadow;
+            color: #fff;
         }
         .Btn_Buy:hover{
-            background-color: #218838;
-            border-color: #1e7e34;
-            color:rgb(255, 253, 253);
+            background-color:$btn-hover;
+            box-shadow: none;
         }
         a{
             /* bs內建text-decoration-none */
@@ -73,10 +75,8 @@
         }
     }
 }
-@include cellphone{
+@include mobile{
     #Check-Buy{
-        display: flex;
-        justify-content: space-between;
         width: calc(100% - 60px);
         margin-left: auto;
     }
@@ -84,6 +84,10 @@
 
 //JSclassList
 @include cellphone{ 
+    #Check-Buy{
+        display: flex;
+        justify-content: space-between;
+    }
     .open-section{
         width: calc(100% - 220px) !important;
         transition: 0.5s;
@@ -93,12 +97,13 @@
     width: 100% !important;
 }
 .Sum-Price{
-    color: $price-color;
+    color: #fff;
     text-shadow: $price-text-shadow;
 }
 //Template Spopping_Select_Template
 .Game-Item{
-    border-bottom: 1px solid rgb(58, 57, 57);
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1em;
     h2{
         font-size: 1.3em;
         font-weight: 900;
@@ -119,7 +124,7 @@
                 font-weight:800 ;
                 font-size: 0.8em;
                 text-shadow: $price-text-shadow;
-                color: $price-item-color;
+                color: #fff;
             }
         }
         @include cellphone{

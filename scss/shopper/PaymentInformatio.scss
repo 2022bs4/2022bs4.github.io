@@ -3,10 +3,11 @@
 @import '_navbar';
 
 #Payment-Information{
-    background-color: $color-bg;
+    background: $Main-bcg;
     width: 100%;
     transition: .5s;
     padding: 1em 1em 5em 1em;
+    color: #fff;
 }
 @include mobile{
     #Payment-Information{
@@ -89,16 +90,19 @@
     position: absolute;
 }
 .Check-Buy-Btn{
+    font-size: 1.5rem;
     box-shadow: $buy-box-shadow;
-    background-color: $btn-buy-bcg;
-    border-color: $btn-buy-bcg;
-    color: #000;
+    background: $btn-buy-bcg;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
     font-weight: 700;
 }
 .Check-Buy-Btn:hover {
     color: #fff;
-    background-color: #218838;
-    border-color: #1e7e34;
+    background-color: $btn-hover;
+    box-shadow: none;
 }
 @include mobile {
     #Payment-Information{
@@ -120,8 +124,9 @@
     width: 100% !important;
 }
 .Erro{
-    background-color: rgba(240, 169, 169, 0.856);
+    background-color: rgba(255 ,0 ,0 , 89%);
 }
+
 @include cellphone{ 
     .open-section{
         width: calc(100% - 220px) !important;
@@ -133,7 +138,6 @@
 
 //共用
 span{
-    text-shadow: 1px 1px 1px #eee;
     font-weight:700 ;
 }
 .Number-title{
@@ -143,4 +147,7 @@ span{
 input{
     border: 1px solid #aaa;
     border-radius: 5px;
+}
+input::-webkit-input-placeholder { 
+    color: #fff;
 }

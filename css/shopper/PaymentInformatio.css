@@ -398,11 +398,13 @@
 }
 
 #Payment-Information {
-  background-color: #edf1f2;
+  background: -webkit-gradient(linear, left top, right top, from(#0c273c), to(#475e6e));
+  background: linear-gradient(to right, #0c273c, #475e6e);
   width: 100%;
   -webkit-transition: .5s;
   transition: .5s;
   padding: 1em 1em 5em 1em;
+  color: #fff;
 }
 
 @media (min-width: 576px) {
@@ -483,18 +485,23 @@
 }
 
 .Check-Buy-Btn {
+  font-size: 1.5rem;
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
-  background-color: #57c470;
-  border-color: #57c470;
-  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a5f5b7), color-stop(#337342), to(#275a33));
+  background: linear-gradient(to bottom, #a5f5b7, #337342, #275a33);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
   font-weight: 700;
 }
 
 .Check-Buy-Btn:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 576px) {
@@ -520,7 +527,7 @@
 }
 
 .Erro {
-  background-color: rgba(240, 169, 169, 0.856);
+  background-color: red;
 }
 
 @media (min-width: 768px) {
@@ -532,7 +539,6 @@
 }
 
 span {
-  text-shadow: 1px 1px 1px #eee;
   font-weight: 700;
 }
 
@@ -544,5 +550,10 @@ span {
 input {
   border: 1px solid #aaa;
   border-radius: 5px;
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
 }
 /*# sourceMappingURL=PaymentInformatio.css.map */

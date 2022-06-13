@@ -2,7 +2,8 @@ let MonthData = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11
 
 let YeatData = [ "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047"]
 //國家json
-const CountryUrl = "/json/shopper/Coutnry.json"
+// const CountryUrl = "/Json/Coutnry.json"
+const CountryUrl = "/Json/shopper/Coutnry.json"
 //
 window.onload = function () {
     Setnavbar("#Payment-Information")

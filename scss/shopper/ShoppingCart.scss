@@ -6,7 +6,8 @@
 }
 
 #ShoppingCart{
-    background-color: $color-bg;
+    background:$Main-bcg ;
+    color: #fff;
     width:100%;
     margin-left: auto;
     padding-bottom: 5em;
@@ -22,34 +23,41 @@
     .Main-Content{
         .Shopping-ElseFunction{
             .Continue-Shopping{
-                font-size: 1em;
-                background-color:$btn-buy-bcg;
-                border-color: $btn-buy-bcg;
-                color: #000;
+                font-size: 1.5rem;
+                background:$btn-buy-bcg;
+                color: #fff;
                 box-shadow: $btn-box-shadow;
-                padding: 0.5em;
-                border-radius: 5px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: none;
                 margin-right: 1.5em;
                 font-weight: 700;
+                text-decoration: none;
             }
             .Continue-Shopping:hover{ 
-                background-color: $buy-hover;
-                border-color: $buy-hover;
-                color: #fff;
-                text-decoration: none;
-                
+                box-shadow: none;
+                background: $buy-hover;
             }
             .DelAllItem{
-                background-color:$btn-bcg-color;
+                font-size: 1.5rem;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 10px;
+                background:$btn-bcg-color;
                 box-shadow: $btn-box-shadow;
                 font-weight: 700;
-            }
-            .DelAllItem:hover{
-                background-color:$btn-hover;
-                border-color:$btn-hover;
                 color: #fff;
             }
+            .DelAllItem:hover{
+                background:$btn-hover;
+                box-shadow: none;
+            }
         }
+    }
+    @include mobile{
+        .Main-Content{
+            padding: 1em;
+        } 
     }
     @include cellphone{
         .Shopping-Recommend{
@@ -59,7 +67,7 @@
         }
     }
 }
-@include cellphone{
+@include mobile{
     #ShoppingCart{
         width: calc(100% - 60px);
         margin-left: auto;
@@ -88,7 +96,7 @@
         font-weight: 700;
         .Shpopping-Price{
             font-weight: 900;
-            color: $price-color;
+            color: #fff;
             text-shadow: $price-text-shadow;
         }
     }
@@ -100,7 +108,7 @@
 }
 
 
-@include cellphone{
+@include mobile{
     //mainopen classList
     .open-section{
         width: calc(100% - 220px) !important;
@@ -112,7 +120,7 @@
 //Template Spopping_Select_Template
 .Game-Shopping-Item{
     padding:1em 0em 1em 0em;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     .Game-Price{
         position: relative;
         height: 9em;
@@ -131,21 +139,25 @@
             }
             .Select-Item-Price{
                 font-weight: 900;
-                color: rgb(254, 46, 46);
-                text-shadow: 3px 2px 1px #0000003d;
+                color:#fff;
+                text-shadow: $price-text-shadow;
             }
         }
         .Remove_btn{
+            font-size: 1.5rem;
             position: absolute;
             right: 0;
             bottom: 0;
-            background-color:$btn-bcg-color;
+            background:$btn-bcg-color;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 10px;
             box-shadow: $btn-box-shadow;
         }
         .Remove_btn:hover{
-            background-color:#b45d35;
-            border-color:#b45d35;
-            color: #fff;
+            background:$btn-hover;
+            box-shadow: none;
         }
     }
     @include pad{

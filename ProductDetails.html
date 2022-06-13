@@ -110,7 +110,7 @@
         <section class="MainGame-Datial col-12 p-0 d-md-flex flex-md-wrap justify-content-md-between">
             <h2 class="Table-title w-100"></h2>
             <!-- 遊戲名稱、開發商、開發人員、發行日期、簡介 動態載入 -->
-            <div class="Game-Introduce d-md-flex flex-md-column justify-content-md-between mt-md-2">
+            <div class="Game-Introduce d-md-flex flex-md-column justify-content-md-between mb-4 mb-md-0 mt-md-2">
                 <div>   
                     <img  alt="" class="w-100">
                     <p class="col-12  p-0 text-left"></p>
@@ -127,14 +127,14 @@
             </div>
             
             <!--影片 動態測入，目前Lol測試版  -->
-            <div class="Game-Video-Introduce mt-md-2 ">
+            <div class="Game-Video-Introduce mt-md-2">
                 <!-- 以下測試 -->
                 <div  class="swiper mySwiper1 ">
                     <div class="swiper-wrapper" id="mainphoto"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper2">
+                <div thumbsSlider="" class="swiper mySwiper2 mt-5">
                     <div class="swiper-wrapper" id="thumbs">
                     </div>
                 </div>
@@ -147,7 +147,7 @@
             <!-- 購買收藏等功能鍵、靜態 -->
             <div class="Game-Function-Btn col-12 p-0 d-lg-flex justify-content-md-between">
                 <div class="Game-Price d-flex align-items-center col-12 col-lg-6"></div>
-                <div class="Price-btn col-12 col-lg-6 flex-row-reverse">
+                <div class="Group-btn col-12 col-lg-6 flex-row-reverse">
                     <button>收藏</button>
                     <button>分享</button>
                     <button class="btn ">
@@ -159,18 +159,18 @@
 
         <section class="col-12 d-md-flex flex-md-wrap justify-content-md-between p-0 Game-Datails-Area">
             <!-- 遊戲文字介紹 要動態載入 -->
-            <p class="col-12 p-0 mt-4 ">關於此遊戲</p>
-            <div class="Game-Datails col-12 col-md-8 p-0">
+            <p class="col-12 p-0 mt-4 About-Game">關於此遊戲</p>
+            <div class="Game-Datails col-12 col-md-8  mb-4 m-md-0">
             </div>
             <div class="Recommend col-12 col-md-3 p-0 "></div>
         </section>
         <section class="col-md-12">
             <!-- 性統需求 -->
-            <div class="System-Requirement col-12 d-flex flex-wrap p-0">
+            <div class="System-Requirement col-12 d-flex flex-wrap p-0 mt-4">
                 <!-- Nav -->
                 <nav class=" col-12 d-flex justify-content-around">
                     <button class="btn">Windows</button>
-                    <button class="btn">macOS</button>
+                    <button class="btn">Mac</button>
                     <!-- <button class="">SteamOS<br>Linux</button> -->
                 </nav>
                 <div class="col-12 d-md-flex Cnfigure-Box">
@@ -196,7 +196,7 @@
         </section>
             
         <section class="Video-Area">
-            <video src="/video/FUU.mp4" poster="/img/MTH002.jpeg" controls="true"></video>
+            <video src="/video/shopper/Pexels Videos 2527932.mp4" poster="/img/shopper/MTH002.jpeg" controls="true"></video>
             <i class="fa-solid fa-xmark Video-Clear"></i>
         </section>
     </main>
@@ -252,8 +252,10 @@
                 <a href="#" class="col-12 p-0">
                     <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/597180/capsule_184x69_tchinese.jpg?t=1654230486" alt="" class="w-100">
                 </a>
-                <span>NT$:</span>
-                <p class="Recommend-Price">9527</p>
+                <div class="col-12 d-flex justify-content-between">
+                    <span>售價為:</span>
+                    <p class="Recommend-Price">NT $9527</p>
+                </div>
             </div>
         </div>
     </template>
@@ -269,7 +271,7 @@
         <!-- swiper  JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
-        <!-- <script src="/js/forum.js"></script> -->
+    <!-- <script src="/js/ProductDetails.js"></script> -->
     <script src="/js/shopper/ProductDetails.js"></script>
 </body>
 </html>
