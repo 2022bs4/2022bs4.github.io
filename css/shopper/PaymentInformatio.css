@@ -472,33 +472,6 @@
   width: 5em;
 }
 
-@media (min-width: 576px) {
-  #Payment-Information {
-    padding: 1em 2em 5em 2em;
-  }
-}
-
-@media (min-width: 768px) {
-  #Payment-Information {
-    padding: 1em 1em 5em 1em;
-  }
-  .open-section {
-    width: calc(100% - 220px) !important;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-}
-
-.Erro {
-  background-color: rgba(240, 169, 169, 0.856);
-}
-
-@media (min-width: 992px) {
-  #Payment-Information {
-    padding: 1em 4.7em 5em 4.7em;
-  }
-}
-
 .Country-Input, .Month-Input.Year-Input {
   position: relative;
 }
@@ -512,10 +485,50 @@
 .Check-Buy-Btn {
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
+  background-color: #57c470;
+  border-color: #57c470;
+  color: #000;
+  font-weight: 700;
+}
+
+.Check-Buy-Btn:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+@media (min-width: 576px) {
+  #Payment-Information {
+    padding: 1em 2em 5em 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  #Payment-Information {
+    padding: 1em 1em 5em 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  #Payment-Information {
+    padding: 1em 4.7em 5em 4.7em;
+  }
 }
 
 .MainScreen {
   width: 100% !important;
+}
+
+.Erro {
+  background-color: rgba(240, 169, 169, 0.856);
+}
+
+@media (min-width: 768px) {
+  .open-section {
+    width: calc(100% - 220px) !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 
 span {
@@ -526,5 +539,10 @@ span {
 .Number-title {
   font-weight: 800;
   font-size: 2em;
+}
+
+input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=PaymentInformatio.css.map */

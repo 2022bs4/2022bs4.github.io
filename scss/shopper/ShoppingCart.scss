@@ -23,18 +23,31 @@
         .Shopping-ElseFunction{
             .Continue-Shopping{
                 font-size: 1em;
-                background-color:rgb(43,71,94);
-                color: rgb(195, 226, 245);
+                background-color:$btn-buy-bcg;
+                border-color: $btn-buy-bcg;
+                color: #000;
                 box-shadow: $btn-box-shadow;
                 padding: 0.5em;
                 border-radius: 5px;
                 margin-right: 1.5em;
+                font-weight: 700;
+            }
+            .Continue-Shopping:hover{ 
+                background-color: $buy-hover;
+                border-color: $buy-hover;
+                color: #fff;
+                text-decoration: none;
+                
             }
             .DelAllItem{
                 background-color:$btn-bcg-color;
-                color: $btn-color;
                 box-shadow: $btn-box-shadow;
-                border-radius: 5px;
+                font-weight: 700;
+            }
+            .DelAllItem:hover{
+                background-color:$btn-hover;
+                border-color:$btn-hover;
+                color: #fff;
             }
         }
     }
@@ -126,10 +139,13 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            border-radius: 5px;
             background-color:$btn-bcg-color;
-            color: $btn-color;
             box-shadow: $btn-box-shadow;
+        }
+        .Remove_btn:hover{
+            background-color:#b45d35;
+            border-color:#b45d35;
+            color: #fff;
         }
     }
     @include pad{
@@ -159,4 +175,9 @@ img{
 
 .MainScreen{
     width: 100% !important;
+}
+button{
+    color: #000;
+    font-weight: 700;
+    border-radius: 5px;
 }

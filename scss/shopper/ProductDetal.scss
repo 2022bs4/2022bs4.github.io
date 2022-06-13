@@ -141,13 +141,29 @@
         margin-left: 1em;
         &:nth-child(1),&:nth-child(2){
         background-color:$btn-bcg-color;
-        color: $btn-color;
+        border-color: $btn-bcg-color;
+        color: #000;
         box-shadow: $btn-box-shadow;
         }
+        &:nth-child(1):hover,&:nth-child(2):hover{
+            background-color:$btn-hover;
+            border-color:$btn-hover;
+            color: #fff;
+            }
         &:nth-child(3){
+            background-color: $btn-buy-bcg;
+            border-color: $btn-buy-bcg;
             box-shadow: $buy-box-shadow;
             a{
-                color: #eee;
+                color: #000;
+            }
+        }
+        &:nth-child(3):hover {
+            background-color: $buy-hover;
+            border-color: $buy-hover;
+            a{
+                color: #fff;
+                text-decoration: none;
             }
         }
     }

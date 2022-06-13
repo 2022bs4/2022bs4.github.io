@@ -2,7 +2,6 @@
 @import '_mixin';
 @import '_navbar';
 
-
 #Payment-Information{
     background-color: $color-bg;
     width: 100%;
@@ -63,49 +62,21 @@
 }
 
 .Visa-InputData{
-        div{
-            .Month-Input{
-                width: 5em;
-                margin:0 0.5em 0 0em ;
-            }
-        }
-        div{
-            .Year-Input{
-                width: 5em;
-            }
-        }
-        div{
-            #Visa_Safety{
-                width: 5em;
-            }
+    div{
+        .Month-Input{
+            width: 5em;
+            margin:0 0.5em 0 0em ;
         }
     }
-
-@include mobile {
-    #Payment-Information{
-        padding: 1em 2em 5em 2em;
+    div{
+        .Year-Input{
+            width: 5em;
+        }
     }
-}    
-
-//
-@include cellphone{ 
-    //JSclassList
-    #Payment-Information{
-        padding: 1em 1em 5em 1em;
-    }
-    .open-section{
-        width: calc(100% - 220px) !important;
-        transition: 0.5s;
-    }
-}
-.Erro{
-    background-color: rgba(240, 169, 169, 0.856);
-}
-
-//
-@include pad{
-    #Payment-Information{
-        padding: 1em 4.7em 5em 4.7em;
+    div{
+        #Visa_Safety{
+            width: 5em;
+        }
     }
 }
 //
@@ -119,12 +90,48 @@
 }
 .Check-Buy-Btn{
     box-shadow: $buy-box-shadow;
+    background-color: $btn-buy-bcg;
+    border-color: $btn-buy-bcg;
+    color: #000;
+    font-weight: 700;
 }
-//
+.Check-Buy-Btn:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+@include mobile {
+    #Payment-Information{
+        padding: 1em 2em 5em 2em;
+    }
+}
+@include cellphone{
+    #Payment-Information{
+        padding: 1em 1em 5em 1em;
+    }
+}    
+@include pad{
+    #Payment-Information{
+        padding: 1em 4.7em 5em 4.7em;
+    }
+}
+//JSList
 .MainScreen{
     width: 100% !important;
 }
+.Erro{
+    background-color: rgba(240, 169, 169, 0.856);
+}
+@include cellphone{ 
+    .open-section{
+        width: calc(100% - 220px) !important;
+        transition: 0.5s;
+    }
+}
 
+
+
+//共用
 span{
     text-shadow: 1px 1px 1px #eee;
     font-weight:700 ;
@@ -132,4 +139,8 @@ span{
 .Number-title{
     font-weight: 800;
     font-size: 2em;
+}
+input{
+    border: 1px solid #aaa;
+    border-radius: 5px;
 }

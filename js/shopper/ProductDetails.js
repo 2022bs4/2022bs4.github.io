@@ -91,7 +91,7 @@ function BtnFunction(){
 
 // 以下為幻燈片動態
 function GameSlideshow(){
-    const urlGame = "/json/text.json";
+    const urlGame = "/json/shopper/text.json";
     fetch(urlGame)
         .then(response=>response.json())
         .then(result=>{

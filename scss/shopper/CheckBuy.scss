@@ -29,7 +29,8 @@
             }
         }
         .Btn_Buy{
-            background-color: rgb(120, 240, 126);
+            background-color: $btn-buy-bcg;
+            border-color: $btn-buy-bcg;
             font-weight: 700;   
             border-radius: 5px;
             text-decoration: none;
@@ -37,6 +38,11 @@
             right: 0;
             bottom: -1em;
             box-shadow: $btn-box-shadow;
+        }
+        .Btn_Buy:hover{
+            background-color: #218838;
+            border-color: #1e7e34;
+            color:rgb(255, 253, 253);
         }
         a{
             /* bs內建text-decoration-none */
