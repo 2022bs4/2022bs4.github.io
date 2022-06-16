@@ -1,0 +1,62 @@
+:root{
+    --gap: 1em;
+    --gap2: 1.5em;
+    --bg:#1e262c;
+    --font-w: #fff;
+    --font-b: #000;
+    --line-hight: 2em;
+}
+.main__sidepanel{
+    padding: var(--gap2);
+}
+.main__sidepanel h4{
+    font-size: x-small;
+    font-weight: bold;
+}
+.main__content{
+    padding: var(--gap);
+    background: var(--bg);
+    color: var(--font-w);
+    
+    margin: auto;
+}
+h1,h2, .code{
+    line-height: var(--line-hight);
+    font-size: 28px;
+}
+h2, .code{
+    text-align: center;
+}
+.main__text--friend_code p{
+    margin-top: var(--gap2);
+}
+.card-body{
+    padding: 0;
+}
+.card__friend{
+    padding: var(--gap);
+}
+
+@media screen and (min-width: 768px){
+    .main__friendslist{
+        position: relative;
+    }
+    .main__sidepanel{
+        position: fixed;
+        background: var(--bg);
+        height: 100%;
+        left: 50px;
+    }
+    .main__sidepanel h4, .main__sidepanel a, .main__sidepanel hr{
+        color: var(--font-w);
+    }
+    h2, .code{
+        text-align: left;
+    }
+    .main__content{
+        position: absolute;
+        right: 1.5em;
+        background-color: transparent;
+        color: var(--font-b);
+    }
+}

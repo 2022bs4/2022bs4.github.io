@@ -15,16 +15,17 @@ $header-height: 60px;
 $nav-min-width: 60px;
 $nav-max-width: 220px;
 
-//YEN
-$btn-bcg-color: #f56c2d;
-$btn-hover:#b45d35;
-$btn-buy-bcg:#57c470;
-$buy-hover:#218838;
+//Yen
+$Main-bcg:linear-gradient(to right,rgb(12,39,60),rgb(71,94,110)) ;
+$section-color:rgb(16,21,30);
+$section-light-color:rgb(75,90,104);
+$btn-bcg-color: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
+$btn-hover:#66c0f4;
+$btn-buy-bcg:linear-gradient(to bottom, #a5f5b7, #337342, #275a33);
+$buy-hover:#5ec174;
 $btn-box-shadow:5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
 $buy-box-shadow:5px 5px 2px #00000099, -1px -1px 1px #878484;
 $price-text-shadow: 3px 2px 1px #0000003d,
 -1px -1px 1px #c4d2e0;
-$price-color:#111111b8;
-$price-item-color:#fe2e2e;
-//
+
 
