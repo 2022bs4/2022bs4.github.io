@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="./css/shopper/Shop.css">
     <title>商店</title>
     <style>
+        /* 每個主題的間距 */
+        .part-space {
+            margin-top: 20px;
+        }
+        .pic-space{
+            margin-bottom: 5px;
 
+        }        
     </style>
 </head>
 
@@ -105,7 +112,10 @@
 
     <main id="shop" class="container-fluid">
         <div class="row no-gutters">
-            <div class="d-none d-md-block col-2 ">
+            <div class="part-space d-none d-lg-block col-2 ">
+                <img class="w-100" href=""
+                    src="https://store.cloudflare.steamstatic.com/public/images//gift/steamcards_promo_02.png" alt="">
+                <br>
                 <ul class=" list-unstyled " style="padding:none;">禮物卡
                     <li>
                         <a href="">試試</a>
@@ -137,8 +147,9 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-md-10">
-                <section>
+            <div class="col-12 col-lg-10">
+                <!-- 精選與推薦 -->
+                <section class="part-space">
                     <h3>精選與推薦</h3>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -155,11 +166,11 @@
 
                                     <div class="col-md-6">
                                         <p style="font-size: 1.2em;">遊戲名</p>
-                                        <div class="d-none d-md-flex flex-wrap">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
+                                        <div class="d-none d-md-flex flex-wrap row">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
                                         </div>
 
                                         <h2 class="d-none d-md-block ">現已推出</h2>
@@ -184,11 +195,11 @@
 
                                     <div class="col-md-6">
                                         <p style="font-size: 1.2em;">遊戲名</p>
-                                        <div class="d-none d-md-flex flex-wrap">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
+                                        <div class="d-none d-md-flex flex-wrap row">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
                                         </div>
 
                                         <h2 class="d-none d-md-block ">現已推出</h2>
@@ -213,11 +224,11 @@
 
                                     <div class="col-md-6">
                                         <p style="font-size: 1.2em;">遊戲名</p>
-                                        <div class="d-none d-md-flex flex-wrap">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
-                                            <img class=" w-50" src="https://picsum.photos/300/100/?random=10">
+                                        <div class="d-none d-md-flex flex-wrap row">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
+                                            <img class="col-6" src="https://picsum.photos/300/100/?random=10">
                                         </div>
 
                                         <h2 class="d-none d-md-block ">現已推出</h2>
@@ -233,11 +244,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
 
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
@@ -253,15 +259,14 @@
                         </button>
                     </div>
                 </section>
-
-                <section class="row">
+                <!-- 特別優惠 -->
+                <section class="part-space">
                     <!-- specxial_count -->
-                    <div class=" col-12 d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
                         特別優惠
                         <button>瀏覽更多</button>
                     </div>
-
-                    <div id="specxial_count_carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="specxial_count_carouselExampleIndicators" class=" carousel slide">
                         <ol class="carousel-indicators">
                             <li data-target="#specxial_count_carouselExampleIndicators" data-slide-to="0"
                                 class="active"></li>
@@ -270,16 +275,16 @@
                             <li data-target="#specxial_count_carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
 
-                        <div class="col carousel-inner">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class=" d-flex ">
-                                    <div class="clo-4">
+                                <div class="row d-flex ">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <div>
                                             <img class=" w-100" src="https://picsum.photos/300/200/?random=10">
                                         </div>
@@ -292,36 +297,34 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <div class=" d-flex ">
-                                    <div class="clo-4">
+                                <div class="row d-flex ">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <div>
                                             <img class=" w-100" src="https://picsum.photos/300/200/?random=10">
                                         </div>
-
                                         <div>
                                             <img class=" w-100" src="https://picsum.photos/300/200/?random=10">
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
                             <div class="carousel-item ">
-                                <div class=" d-flex ">
-                                    <div class="clo-4">
+                                <div class="row d-flex ">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <img class=" w-100" src="https://picsum.photos/300/400/?random=10">
                                     </div>
-                                    <div class="clo-4">
+                                    <div class="col-4">
                                         <div>
                                             <img class=" w-100" src="https://picsum.photos/300/200/?random=10">
                                         </div>
@@ -329,6 +332,7 @@
                                             <img class=" w-100" src="https://picsum.photos/300/200/?random=10">
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -346,61 +350,360 @@
                         </button>
                     </div>
                 </section>
+                <!-- 個人化推薦項目 -->
+                <div class=" part-space text-center">
+                    <div class="">
+                        <p>登入以檢視個人化推薦項目 <br>
+                            <a class="btn btn-success" href="">登入</a><br>
+                            或免費<a href="">註冊</a>並加入 Steam
+                        </p>
+                    </div>
 
-                <section>
+                </div>
+                <!-- 瀏覽 STEAM(四個按鈕) -->
+                <section class="part-space">
                     瀏覽steam
-                    <div class=" d-flex flex-wrap">
-                        <button class="col-6 col-sm-3">新推出</button>
-                        <button class="col-6 col-sm-3">特惠</button>
-                        <button class="col-6 col-sm-3">免費遊戲</button>
-                        <button class="col-6 col-sm-3">依使用者標籤</button>
+                    <div class="row no-gutters d-flex flex-wrap">
+                        <button class="col-6 col-md-3">新推出</button>
+                        <button class="col-6 col-md-3">特惠</button>
+                        <button class="col-6 col-md-3">免費遊戲</button>
+                        <button class="col-6 col-md-3">依使用者標籤</button>
                     </div>
                 </section>
-
-                <section>
+                <!-- 熱門 VR 遊戲 -->
+                <section class="part-space">
                     <div class="d-flex justify-content-between ">
                         熱門VR遊戲
-                        <button>瀏覽全部</button>
+                        <a class=" d-md-none" href="">更多></a>
+                        <button class=" d-none d-md-flex">瀏覽全部</button>
                     </div>
 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="popVRgame" class="carousel slide">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#popVRgame" data-slide-to="0" class="active"></li>
+                            <li data-target="#popVRgame" data-slide-to="1"></li>
+                            <li data-target="#popVRgame" data-slide-to="2"></li>
                         </ol>
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
                             </div>
 
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-item ">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
                             </div>
 
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-item ">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
                             </div>
+
+                            
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-target="#popVRgame"
                             data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </button>
 
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-target="#popVRgame"
                             data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </button>
                     </div>
                 </section>
+                <!-- 新品與話題商品、暢銷商品、熱門即將發行、特惠 -->
+                <div class="row d-flex part-space">
+                    <div class="col-12 col-md-8">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <!-- 1 -->
+                                <a class="nav-link active" id="nav-new-tab" data-toggle="tab" href="#nav-new" role="tab"
+                                    aria-controls="nav-new" aria-selected="true">新品與話題商品</a>
+                                <!-- 2 -->
+                                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false">暢銷商品</a>
+                                <!-- 3 -->
+                                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false">現正熱門</a>
+                                <!-- 4 -->
+                                <a class="nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
+                                    aria-controls="nav-4" aria-selected="false">最高評價</a>
+                                <!-- 5 -->
+                                <a class="nav-link" id="nav-5-tab" data-toggle="tab" href="#nav-5" role="tab"
+                                    aria-controls="nav-5" aria-selected="false">即將發行</a>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- 1的內容 -->
+                            <div class="tab-pane fade show active" id="nav-new" role="tabpanel"
+                                aria-labelledby="nav-new-tab">
+                                <div class="asd card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card sm_margin" style="max-width: 100%;">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                        </div>
+                                        <div class="col-8">
+                                            <div style="font-size: 0.7em;">遊戲名</div>
+                                            <div style="font-size: 0.7em;">作業系統圖示</div>
+                                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 2的內容 -->
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                ...
+                            </div>
+                            <!-- 3的內容 -->
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                ...
+                            </div>
+                            <!-- 4的內容 -->
+                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">...
+                            </div>
+                            <!-- 5的內容 -->
+                            <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">...
+                            </div>
+                        </div>
+
+                        <nav aria-label="Page navigation example" class=" d-flex justify-content-between">
+                            <p>目前顯示第 <span>1-15</span>筆結果，共<span>1155</span>筆</p>
+
+                            <ul class="pagination pagination-sm justify-content-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 right-gamecard">
+                        <div class="" id="right-gamecard">
+                            <div style="font-size: 0.7em;">遊戲名</div>
+                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 低於NT$300 -->
+                <section class="part-space">
+                    <div class=" d-flex justify-content-between">
+                        低於 NT$ 300
+                        <div>
+                            <a href=""><button>低於 NT$ 300</button></a>
+                            <a href=""><button>低於 NT$ 150</button></a>
+                        </div>
+                    </div>
+                    <div id="loss-then300" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#loss-then300" data-slide-to="0" class="active"></li>
+                            <li data-target="#loss-then300" data-slide-to="1"></li>
+                            <li data-target="#loss-then300" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row d-flex">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                    <img class="col-6 col-md-3" src="https://picsum.photos/100/100/?random=10">
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-target="#loss-then300"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-target="#loss-then300"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- 更新與優惠 -->
+                <section class="part-space">
+                    更新與優惠
+                    <div class="row d-flex flex-wrap no-gutters ">
+                        <a class="col-6 col-sm-4 col-md-5" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                        <a class="col-6 col-sm-4 col-md-2" href="">
+                            <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                            <div class=" d-flex justify-content-end">
+                                按此了解詳情
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
             </div>
         </div>
-
-
     </main>
 
     <footer>
