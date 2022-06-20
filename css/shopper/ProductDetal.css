@@ -398,7 +398,9 @@
 }
 
 #CommodityDetials {
-  background-color: #edf1f2;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#0c273c), to(#475e6e));
+  background: linear-gradient(to right, #0c273c, #475e6e);
   width: 100%;
   margin-left: auto;
   -webkit-transition: .5s;
@@ -407,18 +409,20 @@
 }
 
 #CommodityDetials .MainGame-Datial h2 {
-  font-size: 1em;
-  padding: 0.1em;
-  -webkit-box-shadow: 5px 5px 1px #000, 5px 5px 1px #000;
-          box-shadow: 5px 5px 1px #000, 5px 5px 1px #000;
-  border: 1px solid black;
-  border-radius: 5px;
+  font-size: 2em;
+  padding: 0 0 0.2em 0.5em;
+  border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 576px) {
   #CommodityDetials .MainGame-Datial h2 {
     font-size: 2em;
   }
+}
+
+#CommodityDetials .MainGame-Datial .Game-Introduce {
+  background-color: #10151e;
+  padding: 1em;
 }
 
 #CommodityDetials .MainGame-Datial .Game-Introduce p {
@@ -431,12 +435,29 @@
   font-weight: 800;
 }
 
+#CommodityDetials .MainGame-Datial .Game-Video-Introduce {
+  padding: 1em;
+  background-color: #10151e;
+}
+
 @media (min-width: 768px) {
   #CommodityDetials .MainGame-Datial .Game-Introduce {
     width: 40%;
   }
+  #CommodityDetials .MainGame-Datial .Game-Introduce p {
+    font-size: 0.7em;
+  }
   #CommodityDetials .MainGame-Datial .Game-Video-Introduce {
     width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  #CommodityDetials .MainGame-Datial .Game-Introduce p {
+    font-size: 1.2em;
+  }
+  #CommodityDetials .MainGame-Datial .Game-Introduce h3 {
+    font-size: 1em;
   }
 }
 
@@ -445,10 +466,10 @@
 }
 
 #CommodityDetials .Game-Function-Btn .Game-Price {
+  color: #fff;
   font-size: 2em;
   font-weight: 700;
   padding: 0 0.5em;
-  color: #111111b8;
   text-shadow: 3px 2px 1px #0000003d, -1px -1px 1px #c4d2e0;
 }
 
@@ -458,8 +479,18 @@
   }
 }
 
+#CommodityDetials .Game-Datails-Area .About-Game {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+#CommodityDetials .Game-Datails-Area .Game-Datails {
+  background-color: #4b5a68;
+  padding: 1em;
+}
+
 #CommodityDetials .Game-Datails-Area .Game-Datails p {
-  font-weight: 700;
+  font-size: 1.2em;
 }
 
 #CommodityDetials .Game-Datails-Area .Recommend {
@@ -485,18 +516,35 @@
 }
 
 #CommodityDetials .System-Requirement nav button {
-  width: 30%;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2c4c9), color-stop(#3e5379), to(#2664d2));
+  background: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
+          box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
+  color: #fff;
+}
+
+#CommodityDetials .System-Requirement nav button:hover {
+  background: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 #CommodityDetials .System-Requirement .Cnfigure-Box {
   margin-top: 0.5em;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
 #CommodityDetials .System-Requirement .Cnfigure-Box .Min-Cnfigure {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
   padding: 0.5em 0em 0 0;
+  font-size: 1em;
 }
 
 #CommodityDetials .System-Requirement .Cnfigure-Box .Suggest-Configure {
@@ -506,11 +554,11 @@
 @media (min-width: 768px) {
   #CommodityDetials .System-Requirement .Cnfigure-Box {
     margin-top: 0.5em;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 5px;
   }
   #CommodityDetials .System-Requirement .Cnfigure-Box .Min-Cnfigure {
-    border-right: 1px solid #000;
+    border-right: 1px solid #fff;
   }
   #CommodityDetials .System-Requirement .Cnfigure-Box .Suggest-Configure {
     padding-top: 0.5em;
@@ -518,12 +566,13 @@
 }
 
 #CommodityDetials .System-Requirement .System-text {
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 0.5em;
 }
 
 #CommodityDetials .Video-Area {
   position: fixed;
+  background: #10151e;
   bottom: 1em;
   right: 1em;
   z-index: 3;
@@ -542,56 +591,64 @@
   color: #942916;
 }
 
-.Price-btn {
+.Group-btn {
   margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.Price-btn button {
-  aspect-ratio: 1/0.5;
-  border-radius: 5px;
+.Group-btn button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
   font-weight: 700;
   margin-left: 1em;
 }
 
-.Price-btn button:nth-child(1), .Price-btn button:nth-child(2) {
-  background-color: #f56c2d;
-  border-color: #f56c2d;
-  color: #000;
+.Group-btn button:nth-child(1), .Group-btn button:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2c4c9), color-stop(#3e5379), to(#2664d2));
+  background: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
+  -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
+          box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
+  color: #fff;
+}
+
+.Group-btn button:nth-child(1):hover, .Group-btn button:nth-child(2):hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.Group-btn button:nth-child(3) {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a5f5b7), color-stop(#337342), to(#275a33));
+  background: linear-gradient(to bottom, #a5f5b7, #337342, #275a33);
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
 }
 
-.Price-btn button:nth-child(1):hover, .Price-btn button:nth-child(2):hover {
-  background-color: #b45d35;
-  border-color: #b45d35;
+.Group-btn button:nth-child(3) a {
   color: #fff;
 }
 
-.Price-btn button:nth-child(3) {
-  background-color: #57c470;
-  border-color: #57c470;
-  -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
-          box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #878484;
+.Group-btn button:nth-child(3):hover {
+  background: #5ec174;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.Price-btn button:nth-child(3) a {
-  color: #000;
-}
-
-.Price-btn button:nth-child(3):hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-}
-
-.Price-btn button:nth-child(3):hover a {
+.Group-btn button:nth-child(3):hover a {
   color: #fff;
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #CommodityDetials {
     width: calc(100% - 60px);
     margin-left: auto;
@@ -610,6 +667,13 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.Template-box {
+  font-size: 1em;
+}
+
+@media (min-width: 576px) {
   .open-section {
     width: calc(100% - 220px) !important;
     -webkit-transition: 0.5s;
@@ -617,20 +681,17 @@
   }
 }
 
-.Template-box {
-  font-size: 0.5em;
+.MainScreen {
+  width: 100% !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 img {
   border-radius: 0.4em;
-  border: 1px solid black;
 }
 
 ul {
   list-style: none;
-}
-
-.MainScreen {
-  width: 100% !important;
 }
 /*# sourceMappingURL=ProductDetal.css.map */

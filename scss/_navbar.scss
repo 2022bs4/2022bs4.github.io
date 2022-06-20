@@ -25,18 +25,20 @@
         left: 0px;
         border-bottom: 1px $color-secondary solid;
         z-index: 1001;
+        
 
         &-nav {
             height:calc(100vh - #{$header-height});
-            width: 100%;
             z-index: 1000;
             position: fixed;
             top: $header-height;
             left: 0px;
+            
+           
 
-            @include mobile {
-                width: auto;
-            }
+            // @include mobile {
+            //     width: auto;
+            // }
             
                 
             
@@ -52,6 +54,8 @@
                 padding-top: 10px;
                 padding-bottom: 60px;
                 transform:translateX(-67px);
+              
+                
 
                 @include mobile{
                     transform:translateX(0px);
@@ -142,12 +146,13 @@
                                     color: var(--clr);
                                 }
                             }
-                        }
+
                     }
                 }
             }
         }
 
+    }
         &-tool {
             display: flex;
             width: 100%;
@@ -254,16 +259,12 @@
                 }
 
                 @include mobile {
-                    // .form-control {
-                        // width: auto;
-                        
-                    // }
-                    // .btn {
+                    .btn {
                         position: relative;
                         // border-top-left-radius: 0;
                         // border-bottom-left-radius: 0;
                         // background: #313131;
-                    // }
+                    }
                 }
             }
 
@@ -330,14 +331,63 @@
                 transform: translateX(0px);
             }
             .header-box-nav-content-collapse{
-                opacity: 0;
+                display: none;
                 transition: all 0.5s;
             }
+        }
+        //hover
+        @include mobile{
+            .header-box-nav:hover{
+                background: rgba(0, 0, 0, 0.5);
+    
+                .header-box-nav-content {
+                    width: $nav-max-width;
+                    .icon~span {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    
+                }
+                .header-box-nav-content-collapse{
+                    transform: translateX(0px);
+                    &-collapse{
+                        opacity: 1;
+                        transition: all 0.5s;
+                    }
+                }
+            }    
+
         }
     }
 
     .closenav{
-        transform:translateX(-67px);
+        transform:rotateY(-90deg);
+        transform-origin:-60px;
+        transition: 1s;
+
     }
+
+    .MainScreen{
+        width: 100% !important;
+    }
+    .menu{
+        display: none;
+        li{
+            list-style: none;
+
+            a:hover{
+                color: var(--clr);
+            }
+        }
+        
+    }
+    .list-tour-shop:hover,.list-tour-forum:hover,.list-tour-friend:hover{
+        .menu{display: block;}
+    }
+
+            
+
+   
+
     
 }

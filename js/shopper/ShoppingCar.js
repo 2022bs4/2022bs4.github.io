@@ -9,8 +9,8 @@ window.onload=function(){
     for(let i = 0 ;i<4 ;i++)
     {
         ShoppingTemplate()
-
     }
+    RecommendTemplate()
     Setnavbar("#ShoppingCart");
     MainScreen("#ShoppingCart")
 }

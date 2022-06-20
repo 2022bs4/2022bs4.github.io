@@ -1,0 +1,79 @@
+footer {
+  padding: 0 1em;
+  margin-left: auto;
+  background-color: #1e262c;
+  transition: .5s;
+}
+
+footer .footer-content {
+  padding-top: 2em;
+  padding-bottom: 30px;
+}
+
+footer .footer-content .content-item {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5em;
+}
+
+footer .footer-content .content-item:first-child {
+  text-align: end;
+  padding-right: 1em;
+}
+
+footer .footer-content .content-item:last-child {
+  padding-left: 1em;
+}
+
+footer .footer-content .content-item a {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-content .content-item {
+    width: 33.333333%;
+  }
+}
+
+.item-p {
+  color: #BEBEBE;
+  font-size: 0.5em;
+}
+
+.login-btn-ctrl a {
+  display: block;
+  color: #fff;
+  margin-top: 2em;
+}
+
+a[class^="item-a"] {
+  color: #fff;
+}
+
+a[class^="item-a"]::after {
+  content: '|';
+  color: #fff;
+  padding-left: 7px;
+}
+
+a[class^="item-a"]:last-child::after {
+  content: ' ';
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
+.item-img {
+  width: 6em;
+}
+
+.footer-logo {
+  max-height: 30px;
+}
+/*# sourceMappingURL=footer.css.map */

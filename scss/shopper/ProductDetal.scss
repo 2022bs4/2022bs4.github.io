@@ -3,19 +3,17 @@
 @import '_navbar';
 
 #CommodityDetials{
-    background-color: $color-bg;
+    color: #fff;
+    background:$Main-bcg;
     width: 100%;
     margin-left: auto;
     transition: .5s;
     padding: 1em 2em 5em 2em;
     .MainGame-Datial{
         h2{
-            font-size: 1em;
-            padding: 0.1em;
-            box-shadow: 5px 5px 1px #000,
-                        5px 5px 1px #000;
-            border: 1px solid black;
-            border-radius: 5px;
+            font-size: 2em;
+            padding:0 0 0.2em 0.5em;
+            border-bottom: 1px solid #fff;
         }
         @include mobile{
             h2{
@@ -23,6 +21,8 @@
             }
         }
         .Game-Introduce{
+            background-color: $section-color;
+            padding: 1em;
             p{
                 margin-top:0.5em ;
                 font-size: 0.8em;
@@ -32,22 +32,39 @@
                 font-weight: 800;
             }
         }
+        .Game-Video-Introduce{
+            padding: 1em;
+            background-color: $section-color;
+        }
         @include cellphone{
             .Game-Introduce{
                 width: 40%;
+                p{
+                    font-size: 0.7em;
+                }
             }
             .Game-Video-Introduce{
                 width: 55%;
+            }
+        }
+        @include pad{
+            .Game-Introduce{
+                p{
+                    font-size: 1.2em;
+                }
+                h3{
+                    font-size: 1em;
+                }
             }
         }
     }
     .Game-Function-Btn{
         width: 100%;
         .Game-Price{
+            color: #fff;
             font-size: 2em;
             font-weight: 700;
             padding: 0 0.5em;
-            color: $price-color;
             text-shadow: $price-text-shadow;
         }
         @include mobile{
@@ -57,9 +74,16 @@
         }
     }
     .Game-Datails-Area{
+        .About-Game{
+            font-weight: 800;
+            font-size: 2em;
+        }
         .Game-Datails{
+            background-color: $section-light-color;
+            padding: 1em;
             p{
-                font-weight: 700;
+                // font-weight: 500;
+                font-size: 1.2em;
             }
         }
         .Recommend{
@@ -74,21 +98,34 @@
                     position: sticky;
                     top: 10em;
                 }
+                
             }
         }
     }
     
     .System-Requirement{
         nav button{
-            width: 30%;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border: none;
+            background: $btn-bcg-color;
+            border-radius: 10px;
+            box-shadow: $btn-box-shadow;
+            color: #fff;
+        }
+        nav button:hover{
+            background: $btn-hover;
+            box-shadow: none;
+            transition: .5s;
         }
         .Cnfigure-Box{
             margin-top: 0.5em;
-            border: 1px solid #000;
+            border: 1px solid #fff;
             border-radius: 5px;
             .Min-Cnfigure{
-                border-bottom: 1px solid #000;
+                border-bottom: 1px solid #fff;
                 padding: 0.5em 0em 0 0;
+                font-size: 1em;
             }
             .Suggest-Configure{
                 padding-top: 0.5em;
@@ -97,10 +134,10 @@
         @include cellphone{
             .Cnfigure-Box{
                 margin-top: 0.5em;
-                border: 1px solid #000;
+                border: 1px solid #fff;
                 border-radius: 5px;
                 .Min-Cnfigure{
-                    border-right: 1px solid #000;
+                    border-right: 1px solid #fff;
                 }
                 .Suggest-Configure{
                     padding-top: 0.5em;
@@ -108,13 +145,14 @@
             }
         }
         .System-text{
-            padding-top:1em ;
+            padding-top:2em ;
             font-size: 0.5em;
         }
 
     }
     .Video-Area{
         position: fixed;
+        background: $section-color;
         bottom: 1em;
         right: 1em;
         z-index: 3;
@@ -131,44 +169,50 @@
         }
     }
 }
-.Price-btn{
+.Group-btn{
     margin-top: 1em;
     display: flex;
     button{
-        aspect-ratio: 1/0.5;
-        border-radius:5px ;
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        border-radius:10px ;
+        border: none;
         font-weight: 700;
         margin-left: 1em;
         &:nth-child(1),&:nth-child(2){
-        background-color:$btn-bcg-color;
-        border-color: $btn-bcg-color;
-        color: #000;
+        background:$btn-bcg-color;
         box-shadow: $btn-box-shadow;
+        color: #fff;
         }
         &:nth-child(1):hover,&:nth-child(2):hover{
-            background-color:$btn-hover;
-            border-color:$btn-hover;
+            transition: .5s;
+            background:$btn-hover;
+            box-shadow: none;
             color: #fff;
             }
         &:nth-child(3){
-            background-color: $btn-buy-bcg;
-            border-color: $btn-buy-bcg;
-            box-shadow: $buy-box-shadow;
+            font-size: 1.5rem;
+            border-radius:10px ;
+            background: $btn-buy-bcg;
+            box-shadow: $btn-box-shadow;
             a{
-                color: #000;
+                color: #fff;
             }
         }
         &:nth-child(3):hover {
-            background-color: $buy-hover;
-            border-color: $buy-hover;
+            background: $buy-hover;
+            box-shadow: none;
             a{
                 color: #fff;
                 text-decoration: none;
+                
             }
         }
     }
 }
-@include cellphone{
+
+
+@include mobile{
     #CommodityDetials{
         width: calc(100% - 60px);
         margin-left: auto;
@@ -181,31 +225,34 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
         }
+}
+
+//JSclassList
+.Template-box{
+    font-size: 1em;
+} 
+@include mobile{
     //JSclassList
+    
     .open-section{
         width: calc(100% - 220px) !important;
         transition: 0.5s;
     }
 }
-
-//JSclassList
-.Template-box{
-    font-size: 0.5em;
-} 
-
+.MainScreen{
+    width: 100% !important;
+    transition: 0.5s;
+}
 
 
 //共用
 img{
     border-radius: 0.4em;
-    border: 1px solid black;
 }
 ul{
     list-style: none;
 }
-.MainScreen{
-    width: 100% !important;
-}
+
 
 
 

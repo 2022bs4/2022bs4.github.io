@@ -402,7 +402,9 @@
 }
 
 #ShoppingCart {
-  background-color: #edf1f2;
+  background: -webkit-gradient(linear, left top, right top, from(#0c273c), to(#475e6e));
+  background: linear-gradient(to right, #0c273c, #475e6e);
+  color: #fff;
   width: 100%;
   margin-left: auto;
   padding-bottom: 5em;
@@ -420,36 +422,49 @@
 }
 
 #ShoppingCart .Main-Content .Shopping-ElseFunction .Continue-Shopping {
-  font-size: 1em;
-  background-color: #57c470;
-  border-color: #57c470;
-  color: #000;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a5f5b7), color-stop(#337342), to(#275a33));
+  background: linear-gradient(to bottom, #a5f5b7, #337342, #275a33);
+  color: #fff;
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
-  padding: 0.5em;
-  border-radius: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
   margin-right: 1.5em;
   font-weight: 700;
-}
-
-#ShoppingCart .Main-Content .Shopping-ElseFunction .Continue-Shopping:hover {
-  background-color: #218838;
-  border-color: #218838;
-  color: #fff;
   text-decoration: none;
 }
 
+#ShoppingCart .Main-Content .Shopping-ElseFunction .Continue-Shopping:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #5ec174;
+}
+
 #ShoppingCart .Main-Content .Shopping-ElseFunction .DelAllItem {
-  background-color: #f56c2d;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2c4c9), color-stop(#3e5379), to(#2664d2));
+  background: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
   font-weight: 700;
+  color: #fff;
 }
 
 #ShoppingCart .Main-Content .Shopping-ElseFunction .DelAllItem:hover {
-  background-color: #b45d35;
-  border-color: #b45d35;
-  color: #fff;
+  background: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (min-width: 576px) {
+  #ShoppingCart .Main-Content {
+    padding: 1em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -460,7 +475,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #ShoppingCart {
     width: calc(100% - 60px);
     margin-left: auto;
@@ -490,7 +505,7 @@
 
 .Shopping-Select-Sum-Pric .Shopping-Checkout .Shpopping-Price {
   font-weight: 900;
-  color: #111111b8;
+  color: #fff;
   text-shadow: 3px 2px 1px #0000003d, -1px -1px 1px #c4d2e0;
 }
 
@@ -500,7 +515,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .open-section {
     width: calc(100% - 220px) !important;
     -webkit-transition: 0.5s;
@@ -510,7 +525,7 @@
 
 .Game-Shopping-Item {
   padding: 1em 0em 1em 0em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 .Game-Shopping-Item .Game-Price {
@@ -535,23 +550,29 @@
 
 .Game-Shopping-Item .Game-Price div .Select-Item-Price {
   font-weight: 900;
-  color: #fe2e2e;
-  text-shadow: 3px 2px 1px #0000003d;
+  color: #fff;
+  text-shadow: 3px 2px 1px #0000003d, -1px -1px 1px #c4d2e0;
 }
 
 .Game-Shopping-Item .Game-Price .Remove_btn {
+  font-size: 1.5rem;
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #f56c2d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2c4c9), color-stop(#3e5379), to(#2664d2));
+  background: linear-gradient(to bottom, #c2c4c9, #3e5379, #2664d2);
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
   -webkit-box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
           box-shadow: 5px 5px 2px #00000099, -1px -1px 1px #c4d2e0;
 }
 
 .Game-Shopping-Item .Game-Price .Remove_btn:hover {
-  background-color: #b45d35;
-  border-color: #b45d35;
-  color: #fff;
+  background: #66c0f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 992px) {
