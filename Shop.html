@@ -54,16 +54,19 @@
         }
 
         #viewSteamBtn {
-            margin: auto;
-            margin-bottom: 10px;
-            width: 45%;
-            box-sizing: border-box;
             
+            margin-bottom: 10px;
+            width: 49%;
+            box-sizing: border-box;
         }
         @media screen and (min-width:768px) {
             #viewSteamBtn {
-                width: 22%;                
+                width: 24%;
             }
+        }
+
+        #personalRecommed {
+            height: 5%;
         }
     </style>
 </head>
@@ -164,27 +167,36 @@
                     src="https://store.cloudflare.steamstatic.com/public/images//gift/steamcards_promo_02.png" alt="">
                 <br>
                 <ul class=" list-unstyled " style="padding:none;">禮物卡
-                    <li>
-                        <a href="">試試</a>
-                    </li>
+                    
                 </ul>
 
                 <ul class=" list-unstyled " style="padding:nonex;">推薦
-                    <li>
-
-                    </li>
+                    <li><a href=""><ion-icon name="people-outline"></ion-icon>好友</a></li>
+                    <li><a href=""><ion-icon name="pricetags-outline"></ion-icon>標籤</a></li>
                 </ul>
 
                 <ul class=" list-unstyled " style="padding:nonex;">瀏覽分類
-                    <li>
-
-                    </li>
+                    <li><a href="">暢銷商品</a></li>
+                    <li><a href="">新推出</a></li>
+                    <li><a href="">即將發行</a></li>
+                    <li><a href="">特惠</a></li>
+                    <li><a href="">VR 相關產品</a></li>
+                    <li><a href="">支援控制器</a></li>
                 </ul>
 
                 <ul class=" list-unstyled " style="padding:nonex;">依類型瀏覽
-                    <li>
-
-                    </li>
+                    <li><a href="">免費遊玩</a></li>
+                    <li><a href="">搶先體驗</a></li>
+                    <li><a href="">休閒</a></li>
+                    <li><a href="">冒險</a></li>
+                    <li><a href="">動作</a></li>
+                    <li><a href="">大型多人連線</a></li>
+                    <li><a href="">模擬</a></li>
+                    <li><a href="">獨立</a></li>
+                    <li><a href="">競速</a></li>
+                    <li><a href="">策略</a></li>
+                    <li><a href="">角色扮演</a></li>
+                    <li><a href="">運動</a></li>
                 </ul>
             </div>
 
@@ -261,7 +273,7 @@
                             <button class=" btn-sm btn-secondary">瀏覽更多</button>
                         </div>
                     </div>
-                    <div class="swiper popVRGame">
+                    <div class="swiper SpecialDiscount">
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
@@ -323,29 +335,31 @@
                         <div class="swiper-pagination "></div>
                     </div>
                 </section>
+                
+            </div>
+            <div class="col-12">
                 <!-- 個人化推薦項目 -->
-                <div class=" part-space text-center">
+                <div id="personalRecommed" class=" part-space text-center">
                     <div class="">
                         <p>登入以檢視個人化推薦項目 <br>
                             <a class="btn btn-success" href="">登入</a><br>
                             或免費<a href="">註冊</a>並加入 Steam
                         </p>
                     </div>
-
                 </div>
                 <!-- 瀏覽 STEAM(四個按鈕) -->
                 <section class="part-space">
                     <h2>瀏覽steam</h2>
-                    <div class="d-flex flex-wrap ">
-                        <button id="viewSteamBtn" class="btn-primary  rounded">新推出</button>
-                        <button id="viewSteamBtn" class="btn-primary  rounded">特惠</button>
-                        <button id="viewSteamBtn" class="btn-primary  rounded">免費遊戲</button>
-                        <button id="viewSteamBtn" class="btn-primary  rounded">依使用者標籤</button>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <button id="viewSteamBtn" class="btn-primary rounded">新推出</button>
+                        <button id="viewSteamBtn" class="btn-primary rounded">特惠</button>
+                        <button id="viewSteamBtn" class="btn-primary rounded">免費遊戲</button>
+                        <button id="viewSteamBtn" class="btn-primary rounded">依使用者標籤</button>
                     </div>
                 </section>
                 <!-- 熱門 VR 遊戲 -->
                 <section class="part-space">
-                    <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-between">
                         <h2>熱門VR遊戲</h2>
                         <div>
                             <a class=" d-md-none" href="">更多></a>
@@ -367,7 +381,7 @@
                             <div class="swiper-slide">
                                 <div>
                                     <img src="https://picsum.photos/300/200/?random=10">
-                                    <div>
+                                    <div class="d-flex justify-content-end">
                                         <span>NT$ 186</span>
                                     </div>
                                 </div>
@@ -376,7 +390,7 @@
                             <div class="swiper-slide">
                                 <div>
                                     <img src="https://picsum.photos/300/200/?random=10">
-                                    <div>
+                                    <div class="d-flex justify-content-end">
                                         <span>NT$ 186</span>
                                     </div>
                                 </div>
@@ -385,19 +399,21 @@
                             <div class="swiper-slide">
                                 <div>
                                     <img src="https://picsum.photos/300/200/?random=10">
-                                    <div>
+                                    <div class="d-flex justify-content-end">
                                         <span>NT$ 186</span>
                                     </div>
                                 </div>
                             </div>
+
+                            
                         </div>
                         <div class="swiper-pagination "></div>
                     </div>
                 </section>
                 <!-- 新品與話題商品、暢銷商品、熱門即將發行、特惠 -->
-                <div class="row d-flex part-space">
-                    <div class="col-12 col-md-8">
-                        <nav>
+                <div class="d-flex part-space">
+                    <div class="row">
+                        <nav class="col-12">
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <!-- 1 -->
                                 <a class="nav-link active" id="nav-new-tab" data-toggle="tab" href="#nav-new" role="tab"
@@ -417,7 +433,7 @@
                             </div>
                         </nav>
 
-                        <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-content col-md-8" id="nav-tabContent">
                             <!-- 1的內容 -->
                             <div class="tab-pane fade show active" id="nav-new" role="tabpanel"
                                 aria-labelledby="nav-new-tab">
@@ -504,10 +520,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
                             <!-- 2的內容 -->
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel"
@@ -527,7 +539,23 @@
                             </div>
                         </div>
 
-                        <nav aria-label="Page navigation example" class=" d-flex justify-content-between">
+                        <div class="d-none d-md-block col-md-4 right-gamecard">
+                            <div class="" id="right-gamecard">
+                                <h3>遊戲名</h3>
+                                <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
+                                    <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
+                                        style="width: 100%">
+                                    <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
+                                        style="width: 100%">
+                                    <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
+                                        style="width: 100%">
+                                    <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
+                                        style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav aria-label="Page navigation example" class="col-12 col-md-8 d-flex justify-content-between">
                             <p>目前顯示第 <span>1-15</span>筆結果，共<span>1155</span>筆</p>
 
                             <ul class="pagination pagination-sm justify-content-end">
@@ -549,21 +577,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="d-none d-md-block col-md-4 right-gamecard">
-                        <div class="" id="right-gamecard">
-                            <h3>遊戲名</h3>
-                            <div style="font-size: 0.7em;"> <small class="text-muted">遊戲類型標籤</small>
-                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
-                                    style="width: 100%">
-                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
-                                    style="width: 100%">
-                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
-                                    style="width: 100%">
-                                <img class="pic-space" src="https://picsum.photos/300/200/?random=10"
-                                    style="width: 100%">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <!-- 低於NT$300 -->
                 <section class="part-space">
@@ -671,6 +685,14 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <a href="">
+                                <img class="w-100" src="https://picsum.photos/300/200/?random=10">
+                                <div class=" d-flex justify-content-end">
+                                    按此了解詳情
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
 
@@ -729,6 +751,7 @@
 
 
                 </section>
+
             </div>
         </div>
     </main>
